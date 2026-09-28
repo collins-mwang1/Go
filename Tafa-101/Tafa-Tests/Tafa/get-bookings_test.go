@@ -11,7 +11,7 @@ func TestBookings(t *testing.T) {
 	rr := httptest.NewRecorder()
 	handleBookings(rr, request)
 	if rr.Code != http.StatusOK {
-		t.Errorf("expected 200 but got %d", rr.Code)
+		t.Errorf("expected '200' but got %d", rr.Code)
 
 	}
 
