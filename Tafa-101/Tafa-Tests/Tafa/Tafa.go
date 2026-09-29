@@ -137,8 +137,6 @@ func handleBookings(w http.ResponseWriter, r *http.Request) {
 			})
 			return
 		}
-		mutex.Lock()
-		defer mutex.Unlock()
 
 		bookingProcess(&remainingTickets, req.UserTickets)
 		userPointer := createUserData(req.UserName, req.PhoneNumber, req.UserTickets)

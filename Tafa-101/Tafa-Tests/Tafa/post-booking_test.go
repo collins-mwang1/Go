@@ -10,9 +10,9 @@ import (
 
 func TestPostBooking(t *testing.T) {
 	bookingData := BookingRequest{
-		UserName:    "Magnetto steward",
+		UserName:    "Magnetto           steward",
 		PhoneNumber: "0786510813",
-		UserTickets: 13,
+		UserTickets: 130,
 	}
 	jsonBytes, err := json.Marshal(bookingData)
 	if err != nil {
