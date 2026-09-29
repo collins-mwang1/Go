@@ -11,7 +11,7 @@ func bookingTikos(totalTikos *int, userTikos *int, remainingTikos *int) {
 func TestBookingProcess(t *testing.T) {
 	var totalTikos int = 300
 	var remainingTikos int
-	userTiko := int(270)
+	userTiko := int(27)
 	bookingTikos(&totalTikos, &userTiko, &remainingTikos)
 	if userTiko > totalTikos {
 		t.Errorf("we have %v tickets kindly try a lower value", totalTikos)

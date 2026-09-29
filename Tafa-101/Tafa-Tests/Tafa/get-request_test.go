@@ -13,7 +13,7 @@ func TestGetRequest(t *testing.T) {
 	handleInformation(rr, request)
 
 	if rr.Code != http.StatusOK {
-		t.Errorf("expected ststus 200, got %d", rr.Code)
+		t.Errorf("expected status 200, got %d", rr.Code)
 
 	}
 
